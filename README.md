@@ -3,3 +3,6 @@ Facing the tyranny of being enslaved by ur parents digital monitor Qustodio? Fea
 
 # Support
 Currently added only Win10/7 scripts
+
+# Downloading
+Just clone/download the folder with the name of your OS
