@@ -1,10 +1,10 @@
-#Executing a script
+# Executing a script
 Executing the script is done by clicking on MonitorConfig.bat once downloaded
 
-#Creating a shortcut
+# Creating a shortcut
 Just make a shortcut linking to MonitorConfig.bat
 
-#Notes
+# Notes
 Unfortunately you need Admin privileges to run the scripts
 Tampering with the code could result in it failing
 Credits to Matt for his Elevate.cmd script
