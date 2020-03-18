@@ -2,7 +2,7 @@ here is the most reliable way we have found for IOS as of yet
 
 go to vpn setting (questudio runs off a vpn)
 
-turn off airplane mode
+turn on airplane mode
 
 find connect of demand setting and the vpn on off
 
