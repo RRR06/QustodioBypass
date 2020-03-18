@@ -7,9 +7,9 @@
  
  @ECHO off
  CLS
- ECHO ========================
+ ECHO ===============================
  ECHO Small config panel for Qustodio
- ECHO ========================
+ ECHO ===============================
 
 :init
  setlocal DisableDelayedExpansion
@@ -57,14 +57,22 @@
  
  ECHO Type "close" to close Qustodio
  ECHO Type "open" to restart/open Qustodio
+ ECHO Type "nuke" to delete qustodio
+ ECHO Type "delay" to put qustodio at the end of the boot sequence
  ECHO Type "end" to exit from the program
+ ECHO.
+ ECHO NOTE: 1)The boot sequence will be reset when running any of the other commands
 
 :startOfScript
+ ECHO.
  SET /P _inputname= Please enter an input:
- IF "%_inputname%"=="open" GOTO :open
  IF "%_inputname%"=="close" GOTO :close
- IF "%_inputname%"=="end" GOTO :end
+ IF "%_inputname%"=="open" GOTO :open 
+ IF "%_inputname%"=="nuke" GOTO :nuke
+ IF "%_inputname%"=="delay" GOTO :delay
+ IF "%_inputname%"=="end" GOTO :EOF
  ECHO Error; Incorrect syntax or not recognized
+ GOTO :startOfScript
  
 :close
  sc config qengine start= disabled
@@ -80,4 +88,21 @@
  net start qupdate
  GOTO :startOfScript
  
-:end
+:delete
+ sc config qengine start= disabled
+ sc config qupdate start= disabled
+ net stop qengine
+ net stop qupdate
+ sc delete qengine
+ sc delete qupdate
+ GOTO :startOfScript
+ 
+:nuke
+ SET /P delete= Do you want to continue? (Y/N)
+ IF "%delete%"=="Y" GOTO :delete
+ GOTO :startOfScript
+ 
+:delay
+ sc config qengine start= delayed_auto
+ sc config qupdate start= delayed_auto
+ GOTO :startOfScript
