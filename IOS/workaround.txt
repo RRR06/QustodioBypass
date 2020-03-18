@@ -1,0 +1,17 @@
+here is the most reliable way we have found for IOS as of yet
+
+go to vpn setting (questudio runs off a vpn)
+
+turn off airplane mode
+
+find connect of demand setting and the vpn on off
+
+disable the connect on demand but quickly turn off airplane mode and re enable the vpn from the vpn setting
+
+now connect on demand should be off and vpn should be on (the vpn being on will prevent the software from noticing that conect on demand is off
+
+reboot your phone
+
+dont open settings
+
+repeat whenever it reenables
