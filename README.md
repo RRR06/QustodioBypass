@@ -7,4 +7,4 @@ Facing the tyranny of being enslaved by ur parents digital monitor Qustodio? Fea
 - Mac
 
 # Downloading
-Just clone/download the folder with the name of your OS
+Read the README.md file for which folder to download and how to use scripts
