@@ -1,3 +1,6 @@
+# Installation
+Download the MonitorConfig.bat, found under the Monitor Config folder
+
 # Executing the script
 Executing the script is done by clicking on MonitorConfig.bat once downloaded
 
