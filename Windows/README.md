@@ -7,8 +7,11 @@ Executing the script is done by clicking on MonitorConfig.bat once downloaded
 # Features
 We currently have 3 features, these are
 - "close" = stops qustodio from working | "open" = allows qustodio to work
-- "nuke" = stops qustodio from working and then deletes it (Note: This might trigger a warning to parents about your actions and the service sitting in your system-tray will remain)
+- "nuke" = stops qustodio from working and then deletes it (Note: This might trigger a warning to parents about your actions and the     service sitting in your system-tray will remain)
 - "delay" = Puts the qengine and qupdate services last in the boot sequence
+- "help" = Bring up the help menu
+- "end" = Close the program
+
 
 # Creating a shortcut
 Just make a shortcut linking to MonitorConfig.bat
@@ -17,3 +20,4 @@ Just make a shortcut linking to MonitorConfig.bat
 Unfortunately you need Admin privileges to run the scripts
 Tampering with the code could result in it failing
 Credits to Matt for his Elevate.cmd script
+Our winpy branch is the experimental branch
