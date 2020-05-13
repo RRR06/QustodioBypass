@@ -1,0 +1,1 @@
+Taskkill /f /im [taskname]
