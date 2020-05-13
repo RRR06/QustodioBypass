@@ -21,15 +21,15 @@
  setlocal EnableDelayedExpansion
 
 :checkPrivileges
-  NET FILE 1>NUL 2>NUL
-  if '%errorlevel%' == '0' ( goto gotPrivileges ) else ( goto getPrivileges )
+ NET FILE 1>NUL 2>NUL
+ if '%errorlevel%' == '0' ( goto gotPrivileges ) else ( goto getPrivileges )
 
 :getPrivileges
   if '%1'=='ELEV' (echo ELEV & shift /1 & goto gotPrivileges)
   ECHO.
-  ECHO ************************
-  ECHO Waiting for UAC approval
-  ECHO ************************
+  ECHO **************************************
+  ECHO Invoking UAC for Privilege Escalation
+  ECHO **************************************
 
   ECHO Set UAC = CreateObject^("Shell.Application"^) > "%vbsGetPrivileges%"
   ECHO args = "ELEV " >> "%vbsGetPrivileges%"
@@ -54,15 +54,18 @@
  setlocal & cd /d %~dp0
  if '%1'=='ELEV' (del "%vbsGetPrivileges%" 1>nul 2>nul  &  shift /1)
  
- 
+:help
+ ECHO.
  ECHO Type "close" to close Qustodio
  ECHO Type "open" to restart/open Qustodio
  ECHO Type "nuke" to delete qustodio
  ECHO Type "delay" to put qustodio at the end of the boot sequence
  ECHO Type "end" to exit from the program
- ECHO.
- ECHO NOTE: 1)The boot sequence will be reset when running any of the other commands
-
+ ECHO Type "help" to bring this menu up
+ ECHO NOTE:
+ ECHO 1)The boot sequence will be reset when running any of the other commands
+ ECHO 2)The "nuke" command will not delete the Qustodio service sitting in your system-tray
+ 
 :startOfScript
  ECHO.
  SET /P _inputname= Please enter an input:
@@ -71,6 +74,8 @@
  IF "%_inputname%"=="nuke" GOTO :nuke
  IF "%_inputname%"=="delay" GOTO :delay
  IF "%_inputname%"=="end" GOTO :EOF
+ IF "%_inputname%"=="help" GOTO :help
+ IF "%_inputname%"=="robigan" ECHO ;)
  ECHO Error; Incorrect syntax or not recognized
  GOTO :startOfScript
  
