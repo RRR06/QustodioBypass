@@ -23,3 +23,4 @@ Right now we only have methods for starting or stopping Qustodio
 
 # Notes
 Admin privileges needed
+Am still getting this figured out
