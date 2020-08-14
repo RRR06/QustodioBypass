@@ -1,9 +1,9 @@
 #Quick Fix
-If you have acsess to Task Maneger 
-- Open Task Maneger
+If you have access to Task Manager
+- Open Task Manager
 - Click more details
 - Scroll down to qustodio engine/app/tray icon
-- they will take a few tries to kill but eventually once you can end them all and they disapear it should be disabled until the next time you reboot
+- they will take a few tries to kill but eventually once you can end them all and they disappear it should be disabled until the next time you reboot
 
 # Installation
 Download the winKill.bat or monitorConfig.bat, found under the Windows folder.
@@ -27,6 +27,3 @@ Just make a shortcut linking to winKill.bat
 Unfortunately you need Admin privileges to run the scripts
 Tampering with the code could result in it failing ;)
 Credits to Matt for his Elevate.cmd script
-
-# Our winpy branch is the experimental branch
-The script just uses an alternate method to execute the sam task
