@@ -7,8 +7,8 @@ alright this is the most complicated one yes so pay close attention
 3. Go to settings > VPN > Qustodio VPN (For Qustodio to work, it uses a vpn)
 4. Now for the following steps, go as quick as you can; Find and turn off the "connect on demand" setting this will be by the little i in  a circle
 5. Go back to the main VPN menu
-6. turn off airplane mode (control center) and immidiatly Turn on the Qustodio VPN
+6. turn off airplane mode (control center) and immediately Turn on the Qustodio VPN
 7. go back to the connect on demand from step 4 (connect on demand should be off but the vpn should be on)
 8. keep phone on do not let it go into sleep mode until it dies
 9. reboot phone (with power)
-10. repeat if the vpn ever turns itself on agian
+10. repeat if the vpn ever turns itself on again

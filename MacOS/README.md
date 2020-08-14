@@ -1,5 +1,5 @@
 # Installation and Usage
-1. Download the "Monitor Config" folder, preferrably keep it in your downloads folder (as that is where the configuration script will search for)
+1. Download the "Monitor Config" folder, preferably keep it in your downloads folder (as that is where the configuration script will search for)
 2. Run the configuration script (Found under the configure section)
 3. Now you can move the folder with the scripts in to wherever you want. Just remember to run them with terminal
 
