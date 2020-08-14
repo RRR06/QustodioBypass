@@ -2,25 +2,28 @@
 1. Download the "Monitor Config" folder, preferably keep it in your downloads folder (as that is where the configuration script will search for)
 2. Run the configuration script (Found under the configure section)
 3. Now you can move the folder with the scripts in to wherever you want. Just remember to run them with terminal
+or
+1. Use curl to download the file/Run the below command
+```
+cd ~/Downloads
+mkdir "Monitor Config"
+cd "Monitor Config"
+curl -O https://raw.githubusercontent.com/RRR06/QustodioBypass/master/MacOS/Monitor%20Config/config.sh
+```
 
 # Configure
-When you've downloaded the folder, you have to give the files permissions to be executed. To do this, the script will go to the Monitor Config folder, and change the permissions of the files to be executable. There are 2 methods for this script.
-The first method is to run this in Terminal:
+When you've downloaded the folder, you have to give the config.sh file permissions to be executed. To do this, the below script will navigate to the Monitor Config folder, and change the permissions of config.sh to be executable.
 ```
-cd Downloads
-cd "Monitor Config"
-chmod 700 close.sh
-chmod 700 open.sh
+cd ~/Downloads/"Monitor Config"
+chmod +x config.sh
 ```
-The second method is to paste this line of code ("chmod 700") into Terminal and then drag the "close.sh" file over the Terminal window. And then paste again the same line of code ("chmod 700") into Terminal but drag the "open.sh file over the Terminal window.
-
 
 # Executing the script
-When running either the "close.sh" or "open.sh" file, make sure to right-click the file and "open with" Terminal. If there's no Terminal option, then select Terminal from the "Other..." window
+Change the Directory to where the Monitor Config folder is located at using `cd` and then run the command `sh config.sh close`
+after config.sh type either close or open to open or close qustodio
 
 # Features
-Right now we only have methods for starting or stopping Qustodio
+Right now we only have methods for disabling or enabling the agents
 
 # Notes
 Admin privileges needed
-Am still getting this figured out
