@@ -1,2 +1,3 @@
-# Here is the most reliable way we have found for IOS as of yet, if you have any other working methods or suggestions pleas contact us in out discord
-Go read the workaround.txt file
+# for iOS please refer to the solutions tab of our discord link below
+
+https://discord.gg/7e8wM9c
