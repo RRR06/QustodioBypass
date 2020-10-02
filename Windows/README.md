@@ -6,6 +6,7 @@ If you have access to Task Manager
 - Click more details
 - Scroll down to qustodio engine/app/tray icon
 - they will take a few tries to kill but eventually once you can end them all and they disappear it should be disabled until the next time you reboot
+- it appears to help if you kill app the engine then tray
 
 # Installation
 Download the winKill.bat or monitorConfig.bat, found under the Windows folder.
@@ -14,7 +15,7 @@ Download the winKill.bat or monitorConfig.bat, found under the Windows folder.
 Executing the script is done by clicking on MonitorConfig.bat / winKill.bat once downloaded
 
 # Features
-We currently have 3 features for MonitorConfig.bat, these are
+We currently have 5 features for MonitorConfig.bat, these are
 - "close" = stops qustodio from working | "open" = allows qustodio to work
 - "nuke" = stops qustodio from working and then deletes it (Note: This might trigger a warning to parents about your actions and the     service sitting in your system-tray will remain)
 - "delay" = Puts the qengine and qupdate services last in the boot sequence
