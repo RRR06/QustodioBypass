@@ -3,7 +3,7 @@ Facing the tyranny of being enslaved by your parents digital monitor Qustodio? F
 
 # Support
 - Win 10/7 (Only tested on Win 10)
-- iOS
+- iOS (methods for iOS can be found on the discord)
 - Mac
 - Android
 
