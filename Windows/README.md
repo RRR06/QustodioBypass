@@ -2,11 +2,11 @@
 
 #please note that the quick fix method may no longer work and is currently under review, please use other methods if possible
 If you have access to Task Manager
-- Open Task Manager
-- Click more details
-- Scroll down to qustodio engine/app/tray icon
-- they will take a few tries to kill but eventually once you can end them all and they disappear it should be disabled until the next time you reboot
-- it appears to help if you kill app the engine then tray
+1. Open Task Manager
+2. Click more details
+3. Scroll down to qustodio engine/app/tray icon
+4. they will take a few tries to kill but eventually once you can end them all and they disappear it should be disabled until the next time you reboot
+5. it appears to help if you kill app the engine then tray
 
 # Installation
 Download the winKill.bat or monitorConfig.bat, found under the Windows folder.
