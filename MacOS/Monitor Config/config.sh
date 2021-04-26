@@ -1,23 +1,24 @@
+#! /bin/sh
 if ["$1" = "close"]; then
- ECHO Disabling Qustodio. A restart must happen, please save anything before executing, any unsaved data will be lost.
- ECHO
  ECHO Admin privileges required
  sudo -v
- ECHO Waiting 10 seconds before starting process
+ ECHO Admin acquired...
  sudo launchctl disable system/com.qustodio.engine
  sudo launchctl disable system/com.qustodio.update
- ECHO
- ECHO Restarting
- sudo shutdown -r now
+ ECHO launchtl disabled...
+ sudo launchctl stop system/com.qustodio.engine
+ sudo launchctl stop system/com.qustodio.update
+ ECHO launchctl stopped...
+ ECHO Done. A system restart would be recommended though just in case...
 elif ["$1" = "open"]; then
- ECHO Enabling Qustodio. A restart must happen, please save anything before executing, any unsaved data will be lost.
- ECHO
  ECHO Admin privileges required
  sudo -v
- ECHO Waiting 10 seconds before starting process
+ ECHO Admin acquired...
  sudo launchctl enable system/com.qustodio.engine
  sudo launchctl enable system/com.qustodio.update
- ECHO
- ECHO Restarting
- sudo shutdown -r now
+ ECHO launchctl enabled...
+ sudo launchctl start system/com.qustodio.engine
+ sudo launchctl start system/com.qustodio.update
+ ECHO launchctl started...
+ ECHO Done...
 fi
