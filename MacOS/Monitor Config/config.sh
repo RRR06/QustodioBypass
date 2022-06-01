@@ -1,24 +1,23 @@
 #! /bin/sh
+if (( $EUID != 0 )); then
+    echo "Please run as sudo/admin."
+    exit
+fi
 if ["$1" = "close"]; then
- ECHO Admin privileges required
- sudo -v
- ECHO Admin acquired...
  sudo launchctl disable system/com.qustodio.engine
  sudo launchctl disable system/com.qustodio.update
- ECHO launchtl disabled...
+ echo "launchtl disabled..."
  sudo launchctl stop system/com.qustodio.engine
  sudo launchctl stop system/com.qustodio.update
- ECHO launchctl stopped...
- ECHO Done. A system restart would be recommended though just in case...
+ echo "launchctl stopped..."
+ echo "Done. Restarting your system..."
 elif ["$1" = "open"]; then
- ECHO Admin privileges required
- sudo -v
- ECHO Admin acquired...
  sudo launchctl enable system/com.qustodio.engine
  sudo launchctl enable system/com.qustodio.update
- ECHO launchctl enabled...
+ echo "launchctl enabled..."
  sudo launchctl start system/com.qustodio.engine
  sudo launchctl start system/com.qustodio.update
- ECHO launchctl started...
- ECHO Done...
+ echo "launchctl started..."
+ echo "Done. Restarting your system..."
 fi
+sudo shutdown -r now
