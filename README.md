@@ -1,3 +1,6 @@
+# Archived
+This repo is now archived, checkout the discord [guild](https://discord.gg/hd3K8PH) for more information
+
 # QustodioBypass
 Facing the tyranny of being enslaved by your parents digital monitor Qustodio? Fear no more as we share the same experience, this will help you disable Qustodio
 
